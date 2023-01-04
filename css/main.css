@@ -54,10 +54,32 @@ body {
     font-size: 50px;
     color: #222222;
     font-weight: normal;
+    position: relative;
 }
 .main-title > span {
     display: block;
     font-weight: bold;
+}
+.main-title::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 6px;
+    background-color: #662c8c;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.item {
+    font-size: 20px;
+}
+.item::before {
+    content: '✅';
+    margin-right: 10px;
+}
+.item::after {
+    content: ';';
 }
 
 .description {
